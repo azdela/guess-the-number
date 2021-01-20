@@ -18,13 +18,15 @@
                 numberGuesses++;
                 gotIt = true;
             } else if (num > guess) {
-                alert("Higher!");
+                guess = prompt("Higher!");
                 numberGuesses++;
             } else {
-                alert("Lower!");
+                guess = prompt("Lower!");
                 numberGuesses++;
             }
         }
+        alert("Congrats! you guessed the correct number which was " + num + "and it took you " + numberGuesses + " guesses.")
+
 	</script>
 </body>
 </html>
