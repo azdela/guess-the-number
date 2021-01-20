@@ -7,12 +7,13 @@
 	<script>
         let num = Math.floor(Math.random() * 11);
 
+        let guess = prompt("guess a number between 1 and 10");
+
         let gotIt = false;
 
         let numberGuesses = 0;
 
         while (gotIt == false) {
-            let guess = prompt("guess a number between 1 and 10");
             if (num == guess) {
                 alert("Got it!");
                 numberGuesses++;
@@ -25,7 +26,7 @@
                 numberGuesses++;
             }
         }
-        alert("Congrats! you guessed the correct number which was " + num + "and it took you " + numberGuesses + " guesses.")
+        alert("Congrats! you guessed the correct number which was " + num + " and it took you " + numberGuesses + " guesses.")
 
 	</script>
 </body>
