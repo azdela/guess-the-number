@@ -13,17 +13,15 @@
 
         let numberGuesses = 0;
 
-        while (gotIt == false || guess != num) {
+        while (gotIt == false) {
+	    numberGuesses++;
             if (num == guess) {
                 alert("Got it!");
-                numberGuesses++;
                 gotIt = true;
             } else if (num > guess) {
                 guess = prompt("Higher!");
-                numberGuesses++;
             } else {
                 guess = prompt("Lower!");
-                numberGuesses++;
             }
         }
         alert("Congrats! you guessed the correct number which was " + num + " and it took you " + numberGuesses + " guesses.")
